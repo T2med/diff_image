@@ -9,7 +9,7 @@ environment:
 dependencies:
   diff_image:
     path: ../../diff_image
-  image: ^2.1.18
+  image: ^3.0.2
 #  path: ^1.6.0
 
 dev_dependencies:

@@ -7,7 +7,12 @@ import 'package:meta/meta.dart';
 Future<Image> getImg({@required dynamic imgSrc}) async {
   Image img;
 
-  var response = await http.get(imgSrc);
+  if (!(imgSrc is String || imgSrc is Uri)) {
+    throw Exception('imgSrc: $imgSrc must be of type String or Uri');
+  }
+  final uri = imgSrc is String ? Uri.parse(imgSrc) : imgSrc;
+
+  var response = await http.get(uri);
   if (response.statusCode != 200) {
     throw Exception(
       'imgSrc: $imgSrc has StatusCode http ${response.statusCode}',
