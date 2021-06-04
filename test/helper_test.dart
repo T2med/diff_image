@@ -7,7 +7,7 @@ import 'package:diff_image/src/helper_functions.dart';
 
 void main() {
   group('Test for helper functions', () {
-    String flutterLogoUrl, badUrl, anotherLogoUrl;
+    var flutterLogoUrl = '', badUrl = '', anotherLogoUrl = '';
 
     setUp(() {
       // A real image

@@ -6,7 +6,7 @@ import 'package:test/test.dart';
 
 void main() {
   group('Test when dart:html is supported', () {
-    String flutterLogoUrl, dartLogoUrl, androidLogoUrl;
+    var flutterLogoUrl = '', dartLogoUrl = '', androidLogoUrl = '';
 
     setUp(() {
       // A real image

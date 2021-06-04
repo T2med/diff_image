@@ -6,7 +6,7 @@ import 'package:diff_image/src/helper_functions.dart';
 
 void main() {
   group('Test when dart:io is supported', () {
-    String flutterLogoUrl, dartLogoUrl, androidLogoUrl;
+    var flutterLogoUrl = '', dartLogoUrl = '', androidLogoUrl = '';
 
     setUp(() {
       // A real image
